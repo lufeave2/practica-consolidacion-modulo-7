@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2>Agregar Nuevo Laboratorio</h2>
+    <form method="post" class="p-3 border rounded shadow">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="id_nombre" class="form-label">Nombre del Laboratorio:</label>
+            {{ form.nombre }}
+            <label for="id_pais" class="form-label">Pais:</label>
+            {{ form.pais }}
+            <label for="id_ciudad" class="form-label">Ciudad:</label>
+            {{ form.ciudad }}
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <a href="{% url 'lista_laboratorios' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}

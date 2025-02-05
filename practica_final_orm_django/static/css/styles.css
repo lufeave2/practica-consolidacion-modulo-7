@@ -1,0 +1,124 @@
+/* ========================= */
+/* 🎨 ESTILOS GENERALES */
+/* ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebeef0; /* Color de fondo claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================= */
+/* 🔹 ESTILOS DE LA BARRA DE NAVEGACIÓN */
+/* ========================= */
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(212, 14, 14, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Amarillo Bootstrap */
+}
+
+.navbar-nav .text-white {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* ========================= */
+/* 📦 ESTILOS DEL CONTENIDO */
+/* ========================= */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h2 {
+    color: #343a40;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* ========================= */
+/* ✏️ BOTONES PERSONALIZADOS */
+/* ========================= */
+
+.btn-custom {
+    background-color: #007bff; /* Azul Bootstrap */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* ========================= */
+/* 📝 FORMULARIOS */
+/* ========================= */
+
+form {
+    background: rgb(235, 234, 237);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ========================= */
+/* 🗑️ ESTILOS PARA LA VISTA ELIMINAR */
+/* ========================= */
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
