@@ -18,8 +18,12 @@ Producto.objects.all()
 
 2.- Obtenga el laboratorio del Producto cuyo nombre es ‘Producto 1’.
 
-producto = Producto.objects.get(nombre="Producto 1")
-print(producto.laboratorio)
+producto = Producto.objects.filter(nombre="producto 1").first()
+if producto:
+    print(producto.laboratorio)
+else:
+    print("No se encontró el producto")
+
 
 3.- Ordene todos los productos por nombre, y que muestre los valores de nombre y laboratorio.
 
@@ -32,3 +36,4 @@ for p in productos:
 
 for producto in Producto.objects.all():
     print(f"Producto: {producto.nombre}, Laboratorio: {producto.laboratorio.nombre}")
+
